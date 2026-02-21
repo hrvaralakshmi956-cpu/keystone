@@ -1,19 +1,27 @@
 import logo from './logo.svg';
 import './App.css';
 import Welcome from "./Welcome.jsx"
-import Dashboard from "./Dashboard.jsx"
+import Header from "./Header.jsx"
+import { BrowserRouter , Route, Routes } from 'react-router-dom';
 
 function App() {
   return (
     <div>
-      <header>
-
+        <Header></Header>
         <h1>Welcome to React JS classes!</h1>
         <button>Click here</button>
-        <Welcome></Welcome>
-        <Dashboard></Dashboard>
+
+        <BrowserRouter>
+
+        <Routes>
+
+            <Route path='/welcome' element={<Welcome/>} />
+
+        </Routes>
+
+        </BrowserRouter>
         
-      </header>
+        
     </div>
   );
 }
