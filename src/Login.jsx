@@ -1,24 +1,34 @@
-import React from 'react'
+import React from 'react';
+import { useState } from 'react';
 
 function Login() {
+
+    const [name,setname]=useState("Varalakshmi");
+    const [password,setpassword]=useState("vara@123");
+
+    console.log("value in variable name",name);
+    console.log("value in  variable password",password);
+
+
+    function handleNameChange(a){
+    setname(a.target.value);    
+    }
+    function handlePasswordChange(pwd){
+    setpassword(pwd.target.value);
+    }
+
     return (
         <div>
             <h1>Login</h1>
-            <input type="username" 
-            name="" 
-            id="" 
-            placeholder="Enter an username" />
-            <br>
-            </br>
+            <p>{name}</p>
+            <p>{password}</p>
+            <input type="username" name="" id="" onChange={handleNameChange} />
 
-            <input type="password" 
-            name="" 
-            id="" 
-            placeholder="Enter a password" />
+            <input type="password" name="" id="" onChange={handlePasswordChange} />
            
 
         </div>
-    )
+    );
 }
 
 export default Login
