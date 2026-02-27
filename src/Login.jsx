@@ -1,10 +1,15 @@
-import React from 'react';
-import { useState } from 'react';
+import React from "react";
+import { useState , useEffect } from 'react';
 
 function Login() {
 
-    const [name,setname]=useState("Varalakshmi");
-    const [password,setpassword]=useState("vara@123");
+    const [name,setname]=useState("Vara");
+    const [password,setpassword]=useState("1");
+
+    useEffect(()=>{
+    console.log("Will be printed when password is updated")
+    alert("pwd updated");
+},[password])
 
     console.log("value in variable name",name);
     console.log("value in  variable password",password);
