@@ -1,21 +1,25 @@
-import React from 'react';
+import React, { useEffect } from "react";
 import "./App.css";
 
 function Header() {
     return (
         <div>
-            <nav className='navbar'>
-                <a href="/" className='navlinks'>
+            <nav className="navbar">
+                <a href="/" className="navlinks">
                     Home
-                    </a>
-                <a href="/Services" className='navlinks'>
+                </a>
+                <a href="/Services" className="navlinks">
                     Services
-                    </a>
-                <a href="/blog" className='navlinks'>
+                </a>
+                <a href="/blog" className="navlinks">
                     Blog
-                    </a>
-                <a href="/Login" className='navlinks'>
-                Login
+                </a>
+                <a href="/Login" className="navlinks">
+                    Login
+                </a>
+
+                <a href="/create-enquiry" className="navlink">
+                    Create Enquiry
                 </a>
             </nav>
         </div>
