@@ -8,6 +8,7 @@ import Services from "./Services.jsx";
 import Home from "./Home.jsx";
 import Login from "./Login.jsx";
 import CreateEnquiry from "./CreateEnquiry.jsx";
+import ProductDetails from "./ProductDetails.jsx";
 
 function App() {
   return (
@@ -25,6 +26,7 @@ function App() {
             <Route path="*" element={<h2>Page Not Found</h2>} />
             <Route path="/login" element={<Login/>} />
             <Route path="/create-enquiry" element={<CreateEnquiry/>} />
+            <Route path="/Product-details" element={<ProductDetails/>} />
 
         </Routes>
 
