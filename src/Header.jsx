@@ -21,6 +21,9 @@ function Header() {
                 <a href="/create-enquiry" className="navlink">
                     Create Enquiry
                 </a>
+                <a href="/todo" className="navlinks">
+                Todo list
+                </a>
             </nav>
         </div>
     );
