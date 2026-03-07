@@ -26,7 +26,7 @@ function TodoApp() {
                todoList.map((task)=>{
                 return <div className="taskBox">
                     <p>{task}</p>
-                    <button onClick={()=>{
+                    <button className="deletebtn" onClick={()=>{
                         const filteredTasks=todoList.filter((i)=>{
                         return i!==task;
                         })

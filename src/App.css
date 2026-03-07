@@ -52,3 +52,31 @@
     flex-wrap: wrap;
     row-gap: 20px;
 }
+
+.taskBox
+{
+   width:200px;
+   height: 60px;
+   border-radius: 4px;
+   box-shadow:0px 0px 2px 2px #f1f1f1;
+   display: flex;
+   justify-content: space-around;
+   align-items: center;
+   margin-top: 20px;
+}
+
+.deletebtn
+{
+    width:100px;
+    height: 30px;
+    padding:4px;
+    color:white;
+    background-color: rgb(235, 129, 129);
+    outline:none;
+    border:none;
+    border-radius: 4px;
+    box-shadow: 0px 0px 2px 2px rgb(215, 166, 166);
+    cursor: pointer;
+    
+
+}
