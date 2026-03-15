@@ -24,6 +24,9 @@ function Header() {
                 <a href="/todo" className="navlinks">
                 Todo list
                 </a>
+                <a href="/Cart" className="navlinks">
+                Cart ITems
+                </a>
             </nav>
         </div>
     );

@@ -10,6 +10,7 @@ import Login from "./Login.jsx";
 import CreateEnquiry from "./CreateEnquiry.jsx";
 import ProductDetails from "./ProductDetails.jsx";
 import TodoApp from "./TodoApp.jsx";
+import CartItems from "./CartItems.jsx";
 
 function App() {
   return (
@@ -29,6 +30,7 @@ function App() {
             <Route path="/create-enquiry" element={<CreateEnquiry/>} />
             <Route path="/Product-details" element={<ProductDetails/>} />
             <Route path="/todo" element={<TodoApp/>} />
+            <Route path="/Cart" element={<CartItems/>} />
 
         </Routes>
 
