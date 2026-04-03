@@ -9,7 +9,8 @@ function Services() {
     alert("Sum");
     }
     function getProducts(){
-        axios.get("https://fakestoreapi.com/products").then((apiResponse)=>{
+        axios.get("http://localhost:8000/getAllproducts")
+        .then((apiResponse)=>{
           console.log(apiResponse.data);
           setProductList(apiResponse.data)
         }).catch((err)=>{
@@ -34,8 +35,8 @@ function Services() {
                       <div> Description :{ele.description}</div>
                       <img src={ele.image} alt="" width={200} height={200}/>
                       <p>Our Price :{ele.price}</p>
-                      <p>rating :{ele.rating.rate}</p>
-                      <i>Reviewed by :{ele.rating.count}</i>
+                      <p>rating :{ele.rating?.rate || "N/A"}</p>
+                      <i>Reviewed by :{ele.rating?.count || 0}</i>
                       <button onClick={ async ()=>{
                          axios.post("http://localhost:8000/addToCart",ele).then((res)=>{
                          console.log(res);
